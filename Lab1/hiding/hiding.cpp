@@ -58,11 +58,9 @@ int main()
     // -- Base::display(const std::string&) or something else...
     //derived_object.display("I like EDM"); // UNCOMMENT THEN COMPILE
 
-    //3) SOLUTION
-    //Use the scope resolution operator to access the scope of Base
-    //This will effectively "un-hide" the functions that match the name from "Derived"
-
-    //derived_object.Base::display("I like EDM"); // UNCOMMENT THEN COMPILE
+    //3) Now YOU implement a solution! 
+    //You must effectively "un-hide" the functions that match the name from "Derived"
+    //Hint : this can be done by modifying line 59, don't just make a Base object because that is the easy way out
 
     return 0;
 }

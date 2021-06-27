@@ -44,7 +44,7 @@ class Derived : public Base
 
     //Parameterized Constructor
     //The default constructor of Base will be called unless another is explicitly invoked in the initialization list
-    Derived(const std::string& strSource) //: Base(strSource) //<--- UNCOMMENT FOR THE SOLUTION
+    Derived(const std::string& strSource)
     {
     }
 };
@@ -53,12 +53,14 @@ int main()
 {
     //Which "Base" constructor will be invoked?
     //Base::Base or Base::Base(const std::string&)
-    Derived der("Porter Robinson is my friend :)");
+    Derived derived_object("Porter Robinson is my friend :)");
 
     //What will display?
-    der.display();
+    derived_object.display();
 
+    //Now YOU implement a solution!
     //How do we make Porter Robinson my friend?
+    //Hint : can you use an initialization list to make this happen?
 
     return 0;
 }
