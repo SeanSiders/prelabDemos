@@ -61,7 +61,7 @@ InsectGlaive::InsectGlaive(const char* _name, const float _damage, const char* _
 }
 
 //COPY CONSTRUCTOR
-InsectGlaive::InsectGlaive(const InsectGlaive& source) : enchantement(nullptr)
+InsectGlaive::InsectGlaive(const InsectGlaive& source) : Weapon(source), enchantement(nullptr)
 {
     //Null check
     if (!source.enchantement) return;
