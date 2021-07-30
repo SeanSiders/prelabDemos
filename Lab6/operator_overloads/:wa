@@ -1,0 +1,13 @@
+#include <iostream>
+#include "hierarchy.hpp"
+
+int main()
+{
+    //Which string will display : base or derived?
+    base* b = new derived;
+    std::cout << *b;
+
+    delete b;
+
+    return 0;
+}
